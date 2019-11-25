@@ -1,0 +1,7 @@
+</body>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/reloj.js" ></script>
+    <script src="../js/funciones.js"></script>
+    
+</html>

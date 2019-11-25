@@ -1,0 +1,3 @@
+Iniciar en el terminal crontab -e con la siguiente configuracion 
+Minuto  Hora  DiaDelMes  Mes  DiaDeLaSemana  Usuario  Comando
+*/5 * * * * /usr/bin/php /Applications/MAMP/htdocs/Huellero/include/automaticalert/cron.php
