@@ -14,11 +14,10 @@ include ("../mail/configmail.php");
     crossorigin="anonymous">
     <div class="row, cabecera">
         <div class="col-xs-4 col-md-4"><img src="../img/verticalwiedii.svg" alt="" class="imgwiedii"></div>
-        <div class="col-xs-2 col-md-2"><a href="../index.php">
-        <button class="binh" type="button" class="" >Inicio</button></a></div>
-        <div class="col-xs-2 col-md-2"><a href="javascript:window.history.back();"> 
-        <button class="binh" type="button" class="">Volver</button></a></div>
-        <div class="col-xs-3 col-md-2"><?php include "reloj.php"?></div>
+        <div class="col-xs-8 col-md-8"style="text-align: right;"><a href="../index.php">
+        <button type="button" class="btn btn-danger wbutton" >Cerrar Sesion</button></a></div>
+        <!-- <div class="col-xs-2 col-md-2"><a href="javascript:window.history.back();"> 
+        <button class="binh" type="button" class=""></button></a></div> -->
     </div>
    
 </head>

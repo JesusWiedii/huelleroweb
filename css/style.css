@@ -1,8 +1,8 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
   line-height: 1.42857143;
-  color: black;
+  color: white;
   background-color: white;
 }
 .cabecera {
@@ -13,9 +13,14 @@ body {
 }
 .imgwiedii {
   width: 50%;
-  height: 15vw;
+  height: 5vw;
   margin-top: 1vw;
+  display: grid;
 }
+.wbutton{
+  font-size: 2vw;
+}
+
 
 .bini {
   margin-top: 1vw;
@@ -120,15 +125,17 @@ body {
 }
 .bvolver {
   margin-top: 0vw;
-  background-color: transparent;
+  background-color: #2ecc71;
   /* border: 4px solid rgb(2, 181, 222);
   color: rgb(2, 181, 222); */
-  padding: 3vw 2vw;
+  padding: 0vw 0vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 5vw;
+  font-size: 4vw;
   border-radius: 12px;
+  width: 100%;
+
 }
 .bguarda {
   margin-top: 0vw;
@@ -182,14 +189,14 @@ body {
   box-sizing: border-box;
 }
 .contenedor {
-  width: 31vw;
-  height: 10vw;
+  width: 20vw;
+  height: 5vw;
   position: absolute;
   /* max-width: 10vw; */
   margin: auto;
   background: transparent;
   bottom: -100px;
-  right: 39px;
+  right: -10vw;
 }
 .widget {
   width: 2vw;
@@ -207,7 +214,7 @@ body {
   line-height: 2vw;
   margin: 10 6 10px;
   /* color: rgb(2, 181, 222); */
-  color: black;
+  color: white;
   font-size: 7vw;
   line-height: 1vw;
     align-content: center;
@@ -275,7 +282,7 @@ body {
 .ingusu {
   margin-top: 3vw;
   margin-bottom: 0px;
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
   border-spacing: 0vw;
   overflow-x: auto;
@@ -477,7 +484,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: black;
+  color: white;
   background-color: rgba(238, 244, 245, 0.363);
   font-size: 4vw;
   font-size-adjust: none;
