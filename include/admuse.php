@@ -1,6 +1,13 @@
-<?php include "header.php"; ?>
+<?php include "header.php"; 
+session_start();
 
-
+if (isset($_SESSION['User'])){
+  echo 'Bienvenido '.$_SESSION['name'];
+}
+else{
+  header("location:../index.php");
+}
+?>
 
   <form action="save_task.php" method="post">
   <div>
