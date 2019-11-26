@@ -21,9 +21,13 @@
         <div class="row card-body">
             <div class="col-xs-2 col-md-2"></div>
             <div class="col-xs-8 col-md-8">
+
             <?php if(@$_GET['Empty']==true){?>
 <div class="aler-light text-danger my-3" style="Background: white;"><?php echo $_GET['Empty'] ?></div>
     <?php }?>
+    <?php if(@$_GET['Success']==true){?> 
+        <div class="aler-light text-success my-3" style="Background: white;"><?php echo $_GET['Success'] ?></div>
+        <?php }?>
                 <input class="ingusu" type=text placeholder=Usuario name=username autofocus />
                 <input class="ingusu" type=password autocomplete=off placeholder=Contraseña name=password />
                 <p><button class="bvolver bingusu btn btn-succes btn-block" type=submit value=Ingresar name=entrar>

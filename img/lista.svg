@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="a" x1="169.95" x2="198.86" y1="353.19" y2="382.88" gradientTransform="matrix(2.9136 0 0 2.9136 -437.29 -131.78)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#bfbfbf" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(0 -852.36)">
+  <path d="m140.24 899.01-80.671 106.44 34.053 34.053c2.1051 0.1503 4.2289 0.273 6.3736 0.273 48.425 0 87.409-38.984 87.409-87.409 0-0.15121 7.6e-4 -0.30417 0-0.45525-15.826-18.156-40.011-45.747-47.164-52.901z" fill="url(#a)"/>
+  <rect x="12.591" y="864.95" width="174.82" height="174.82" ry="87.409" fill="none" stroke="#000" stroke-dasharray="34.96357949, 11.6545265" stroke-dashoffset="19.355" stroke-linecap="round" stroke-width="5.8273"/>
+  <rect x="57.886" y="897.28" width="84.229" height="110.16" ry="6.1857" fill="#ddd" opacity=".96"/>
+  <g transform="matrix(2.9136 0 0 2.9136 -857.61 -129.38)" fill="#959595">
+   <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+   <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   <g transform="translate(-2.2206e-6 4)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+   <g transform="translate(-2.2206e-6 8)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+   <g transform="translate(-2.2206e-6 12)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+   <g transform="translate(-2.2206e-6 16)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+   <g transform="translate(-2.2206e-6 20)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+   <g transform="translate(-2.2206e-6 24)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+   <g transform="translate(-2.2206e-6 28)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+   <g transform="translate(-2.2206e-6 32)">
+    <rect x="321.49" y="354.25" width="18.407" height="2.0326" ry="0" opacity=".96"/>
+    <circle transform="matrix(.66666 0 0 .66666 103.7 112.67)" cx="322.11" cy="363.91" r="1.5245" opacity=".96"/>
+   </g>
+  </g>
+  <rect y="852.36" width="200" height="200" fill-opacity="0"/>
+ </g>
+</svg>
