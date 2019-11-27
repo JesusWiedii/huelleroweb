@@ -12,6 +12,8 @@ $nombre = $_POST['nombrenuevo'];
 $correo = $_POST['correonuevo'];
 $huella = $_POST['huellanuevo'];
 $contrasena = $_POST['contrasena'];
+$options = array("cost"=>4);
+$hashPassword = password_hash($contrasena,PASSWORD_BCRYPT,$options);
 $admini = $_POST['administrador'];
 $user=$_POST['user'];
 
@@ -23,7 +25,7 @@ if (!empty($nombre) && !empty($correo) && !empty($huella) && !empty($user)) {
         // echo mysqli_num_rows($resultado);
         if (mysqli_num_rows($resultado) == 0) {
             $query = "INSERT INTO usuarios (nombre_usu, huella, contrasena,  correo, estado,  admini, username) 
-            VALUES ('$nombre','$huella', '$contrasena','$correo','Si','$admini','$user')";
+            VALUES ('$nombre','$huella', '$hashPassword','$correo','Si','$admini','$user')";
             $result = mysqli_query($conn, $query);
             if ($result) {
                 echo header("location:admuse?Success=Guardado de forma correcta");
