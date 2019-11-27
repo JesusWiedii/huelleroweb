@@ -485,7 +485,7 @@ optgroup,
 select,
 textarea {
   color: blac;
-  background-color: rgba(238, 244, 245, 0.363);
+  background-color: #bdc3c7;
   font-size: 20px;
   font-size-adjust: none;
   margin-top: 10px;

@@ -11,8 +11,12 @@ if (!isset($_SESSION['User']) && $_SESSION['admini'] == 'No') {
 
 
 <div>
-    <h1 style="display: inline-table;margin-top: 2rem;width: 100%;text-align: center;">
+    <h1 style="display: inline-table;margin-top: 2rem;width: 100%;text-align: center;font-size: 2rem;font-weight: bold;">
 Formulario para agregar personas al huellero Wiedii</h1>
+<div style="text-align: left;">
+<button style="color: red; background-color: transparent; width:8%;" class="bguarda btn btn-succes btn-block" name=""><a href="admuse" style="background-color: transparent; 
+              border-color:transparent"> <img style="width: 5rem; position: fixed;text-align: left;" src="../img/volver.svg" alt="">
+              </a></button></div>
 <div>
             <?php if (@$_GET['Invalid'] == true) { ?>
                 <div class="aler-light text-danger my-3" style="Background: white; text-align:center"><?php echo $_GET['Invalid'] ?></div>
@@ -49,7 +53,7 @@ Formulario para agregar personas al huellero Wiedii</h1>
             
             <div style="text-align: center;">
                 
-              <button type="submit" style="color: #27ae60; background-color: white; width:20%;" class="bguarda btn btn-succes btn-block" name="guardar_persona">Guardar</button></div>
+              <button type="submit" style="color: white ; background-color:#27ae60 ; width:40%;" class="btn btn-success wbutton" name="guardar_persona">Guardar</button></div>
 
           </div>
            
@@ -58,10 +62,10 @@ Formulario para agregar personas al huellero Wiedii</h1>
         
 </div>
 </form>
-<div style="text-align: center;">
+<!-- <div style="text-align: center;">
 <button style="color: red; background-color: transparent; width:8%;" class="bguarda btn btn-succes btn-block" name=""><a href="admuse" style="background-color: transparent; 
               border-color:transparent"> <img style="width: 5rem;" src="../img/volver.svg" alt="">
-              </a></button></div>
+              </a></button></div> -->
 </div>
 
 <?php include('footer.php'); ?>

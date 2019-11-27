@@ -11,7 +11,7 @@ if (!isset($_SESSION['User']) && $_SESSION['admini'] == 'No') {
 
 <form action="add" method="post">
 
-  <div style="place-content: center;text-align: right;display: flex;width: 100%; /* margin-top:30px; */"><button type="submit" class="btn btn-success wbutton" name='guardar_persona' value="Guardar" style="width: 50%;margin-right: 0rem;margin-top: 1rem;">Agregar persona</button></div>
+  <div style="place-content: center;text-align: right;display: flex;width: 100%; /* margin-top:30px; */"><button type="submit" class="btn btn-success wbutton" name='guardar_persona' value="Guardar" style="width: 50%;margin-right: 0rem;margin-top: 1rem; background-color: #27ae60;">Agregar persona</button></div>
 
   <div style="/* margin-left: 10rem; */width: 100%;text-align: center;font-size:2rem;font-weight: bold;"><?php
                                     if (isset($_SESSION['User']) && $_SESSION['admini'] == 'Si') {
