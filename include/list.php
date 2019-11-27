@@ -19,10 +19,12 @@ $nameuser = $row['nombre_usu'];
 ?>
 <div class="container p-4">
     <div style="width: fit-content;">
+    
         <a href="javascript:history.back(-1);" style="background-color: transparent; 
               border-color:transparent"> <img style="width: 5rem;" src="../img/volver.svg" alt="">
         </a>
     </div>
+    <div style="font-size: 2rem;text-align: center;font-weight: bold;">
     <?php
 
     if ($_SESSION['admini'] == 'Si') {
@@ -30,16 +32,16 @@ $nameuser = $row['nombre_usu'];
         ?><br><?php
                         echo 'Listado de asistencia del Wiedder ' . $nameuser;
                     } else {
-                        echo 'Listado de assitencia del Wiedder ' . $_SESSION['name'];
-                    } ?>
+                        echo 'Bienvenido Wiedier '. $_SESSION['name'].', este es su listado de asistencia. ' ;
+                    } ?> </div>
     <div style="text-align: -webkit-center;">
-        <table class="table table-bordered" style="font-size: 2rem; margin-top:2vw;max-width: 80%; " id="tablausu">
-            <thead>
-                <tr>
+        <table class="table table-bordered" style="font-size: 2rem; margin-top:2vw;max-width: 90%; " id="tablausu">
+            <thead style="font-weight: bold;">
+                <tr >
                     <td>Fecha</td>
-                    <td>Hora de entrada</td>
-                    <td>Hora de salida</td>
                     <td>Total horas</td>
+                    <td>Registro</td>
+                    
                 </tr>
             </thead>
 
@@ -54,9 +56,10 @@ $nameuser = $row['nombre_usu'];
                 while ($row = mysqli_fetch_assoc($result)) { ?>
                     <tr style="text-align-last: center;">
                         <td><?php echo $row['Fecha']; ?></td>
-                        <td><?php echo $row['entry_time']; ?></td>
-                        <td><?php echo $row['departure_time']; ?></td>
-                        <td><?php echo $row['TIMEDIFF(departure_time, entry_time)']; ?></td>
+                        <td>Duracion:<br><?php echo $row['TIMEDIFF(departure_time, entry_time)']; ?></td>
+                        <td>Hora de entrada: <?php echo $row['entry_time']; ?> <br>
+                        Hora de salida: <?php echo $row['departure_time']; ?></td>
+                        
                     <?php } ?>
 
             </tbody>

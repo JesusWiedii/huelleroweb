@@ -1,5 +1,5 @@
 <?php include("../db.php");
-include("../mail/configmail.php");
+
 ?>
 <html lang="es">
 
@@ -24,4 +24,4 @@ include("../mail/configmail.php");
 
 </head>
 
-<body background="../img/fondo1.jpeg">
+<body >

@@ -25,6 +25,7 @@ if (isset($_POST['entrar'])) {
                 if ($admini=='Si'){
                     $_SESSION['name'] = $nombre;
                     $_SESSION['admini']='Si';
+                    $_SESSION['id']=$id;
                     header("location:admuse.php");
                 }
                 else{

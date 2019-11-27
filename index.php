@@ -11,7 +11,7 @@
 
 </head>
 
-<body background="img/fondo1.jpeg">
+<body>
 
     <div class="col-xs-12 col-md-12"><img src="img/verticalwiedii.svg" alt="" class="imgwiedii" style="width: 100%;
         height: 12vw;"></div>

@@ -1,12 +1,12 @@
 <tr>
     <td>Administrador:</td>
-    <td><input type="radio" name="admini" class="chkbox" value="No" checked>No
-        <input type="radio" name="admini" class="chkbox" value="Si">Si</td>
+    <td><input type="radio" name="admini" class="chkbox" value="No" <?php echo ($admini== 'No') ?  "checked" : "" ; ?>/>No
+        <input type="radio" name="admini" class="chkbox" value="Si"<?php echo ($admini== 'Si') ?  "checked" : "" ;?>/>Si</td>
 </tr>
 <tr>
     <td>Estado:</td>
-    <td><input type="radio" name="desha" class="chkbox" value="No">Deshabilitado
-        <input type="radio" name="desha" class="chkbox" value="Si" checked>Habilitado</td>
+    <td><input type="radio" name="desha" class="chkbox" value="No"<?php echo ($estado== 'No') ?  "checked" : "" ; ?>/>Deshabilitado
+        <input type="radio" name="desha" class="chkbox" value="Si" <?php echo ($estado== 'Si') ?  "checked" : "" ; ?>/>Habilitado</td>
 </tr>
 <tr>
     <td>Huella:</td>
@@ -16,7 +16,7 @@
     <td>Añadido en: <?php echo $row['fecha']; ?></td>
 </tr>
 <tr>
-    <td></td>
+    <td style="font-weight: bold;" >Si se elimina se borran todos los registros.</td>
     <td style="
     align-items: left;
     text-align: end;

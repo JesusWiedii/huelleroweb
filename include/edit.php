@@ -13,7 +13,7 @@ $id = '';
 $user='';
 $id2 = $_GET['id'];
 $id3 = $_SESSION['id'];
-if ($_SESSION['admini'] == 'No' && $id2 != $id3) {
+if (($_SESSION['admini'] == 'No') && $id2 != $id3) {
   header("location:edit.php?id=$id3");
 }
 
@@ -107,26 +107,30 @@ if (isset($_POST['update'])) {
     <div class="">
       <div class="card card-body">
         <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST">
-          <div class="form-group" style="margin-top: 20rem;font-size: 20px;">
+          <div class="form-group" style="font-size: 20px;">
             <?php if (@$_GET['Invalid'] == true) { ?>
               <div class="aler-light text-danger my-3" style="Background: white;"><?php echo $_GET['Invalid'] ?></div>
             <?php } ?>
             <div style="width: fit-content;">
-              <a href="javascript:history.back(-1);" style="background-color: transparent; 
-              border-color:transparent"> <img style="width: 5rem;" src="../img/volver.svg" alt="">
-              </a>
+            <?php if ($_SESSION['admini'] == 'Si') {
+                    ?><a href="javascript:history.back(-1);" style="background-color: transparent; 
+                    border-color:transparent"> <img style="width: 5rem;" src="../img/volver.svg" alt="">
+                    </a>
+                  <?php } ?>
+              
               <a href="list?id=<?php echo $row['id'] ?>" style="background-color: transparent; 
               border-color:transparent"> <img class="icons" src="../img/lista.svg" alt="">
                 </a>
               
             </div>
-            <?php if ($_SESSION['admini'] == 'Si') {
+            <div style="/* margin-left: 10rem; */width: 100%;text-align: center;font-weight: bold;">
+             <?php if ($_SESSION['admini'] == 'Si') {
               echo 'Bienvenido Administrador Wiedii ' . $_SESSION['name'];
             } else {
               echo 'Bienvenido Wiedder ' . $_SESSION['name'];
-            } ?>
+            } ?></div>
             <div>
-              <table style="width: 100%;font-size: 20px;">
+              <table style="width: 100%;font-size: 20px;" class="table table-bordered">
                 <tbody>
                   <tr>
                     <td>Nombre completo:</td>
